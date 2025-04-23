@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="../images/wallpapersden.com_invincible-season-2-poster_1920x1080.jpg">
+    <link rel="stylesheet" href="./10_DOM_project.css">
+</head>
+<body>
+    <h1 style="color: beige;">A small DOM Project (●'◡'●)</h1>
+    <hr>
+    <div class="div1">
+        <h2>Youtube Subscribe Button</h2>
+        <button onclick="
+            subscribe();
+        " class="js-subscribe subscribe-button">Subscribe</button>
+    </div>
+    <br>
+    <div class="div2">
+        <h2>Rock Paper Scissors game!!</h2>
+        <a class="game-link" href="./10_rock_paper_scissors/10_rock_paper_scissors.html" target="_blank"><img src="./images/rock-paper-scissors.png" height="60px" width="60px" style="margin-bottom: 10px;"></a>
+    </div>
+    <br>
+    <div class="div3">
+        <h2>Amazon Shipping Calculator</h2>
+        <p>+$10 for shipping, if the order is under $50.</p>
+        <p>FREE shipping, if the order is and over $50.</p>
+        <input type="number" placeholder="Cost of order"
+        onkeydown=" 
+            handleKeyDownEnter(event);
+        " class="js-orderCost costInput">
+        <button onclick="
+            calculateTotal();
+        " class="calculate-button">Calculate</button>
+        <p class="js-calculated"></p>
+    </div>
+    <script src="./10_DOM_project.js"></script>
+</body>
+</html>
