@@ -54,5 +54,5 @@ const score = JSON.parse(localStorage.getItem('score')) || {
 
   function updateMoves() {
     document.querySelector('.js-moves').innerHTML =
-      `You picked: <img src="../../images/${yourMove}.png"> Computer picked: <img src="../../images/${computerMove}.png">`;
+      `You picked: <img src="../images/${yourMove}.png"> Computer picked: <img src="../images/${computerMove}.png">`;
   }
