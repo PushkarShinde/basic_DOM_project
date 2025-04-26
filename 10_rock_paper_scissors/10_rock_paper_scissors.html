@@ -12,6 +12,7 @@
     Rock Paper Scissors - Janken
   </h1>
   <hr>
+  <div class="js-instructions instructionbox"></div>
   <div class="buttons-container">
     <button class="moves-button" onclick="play('rock')">
       <img src="../images/rock.png" alt="Rock">
@@ -28,13 +29,7 @@
     <p class="js-moves text"></p>
     <p class="js-status text"></p>
     <p class="js-score text"></p>
-    <button class="reset-score-button" onclick="
-      score.wins=0;
-      score.loses=0;
-      score.ties=0;
-      localStorage.removeItem('score');
-      updateScore();
-    ">Reset Score</button>
+    <button class="reset-score-button" onclick="resetScore();">Reset Score</button>
   </div>  
 
   <script src="./10_rock_paper_scissors.js"></script>
