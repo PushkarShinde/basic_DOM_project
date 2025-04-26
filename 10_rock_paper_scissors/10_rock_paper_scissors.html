@@ -13,17 +13,21 @@
   <button class="moves-button" onclick="play('paper')"><img src="../images/paper.png"></button>
   <button class="moves-button" onclick="play('scissors')"><img src="../images/scissors.png"></button>
 
-  <p class="js-moves text"></p>
-  <p class="js-status text"></p>
-  <p class="js-score text"></p>
-  <button onclick="
-    score.wins=0;
-    score.loses=0;
-    score.ties=0;
-    localStorage.removeItem('score');
-    updateScore();
-  " class="reset-score-button">Reset Score</button>
+  <div class="scoreboard">
+    <p class="js-moves text"></p>
+    <p class="js-status text"></p>
+    <p class="js-score text"></p>
+    <button class="reset-score-button" onclick="
+      score.wins=0;
+      score.loses=0;
+      score.ties=0;
+      localStorage.removeItem('score');
+      updateScore();
+    ">Reset Score</button>
+  </div>  
 
   <script src="./10_rock_paper_scissors.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
 </body>
 </html>
