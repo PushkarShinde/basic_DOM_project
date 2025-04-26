@@ -1,17 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>rock paper scissors</title>
+  <title>Rock Paper Scissors</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/x-icon" href="../images/rock-paper-scissors.png">
-  <!--<style src="./10_rock_paper_scissors.css"></style>-->
   <link rel="stylesheet" href="./10_rock_paper_scissors.css">
 </head>
 <body>
-  <h1 class="title">Rock Paper Scissors - Janken</h1>
+  <h1 class="title js-title">
+    <img src="../images/rock-paper-scissors.png" alt="icon" class="icon">
+    Rock Paper Scissors - Janken
+  </h1>
   <hr>
-  <button class="moves-button" onclick="play('rock')"><img src="../images/rock.png"></button>
-  <button class="moves-button" onclick="play('paper')"><img src="../images/paper.png"></button>
-  <button class="moves-button" onclick="play('scissors')"><img src="../images/scissors.png"></button>
+  <div class="buttons-container">
+    <button class="moves-button" onclick="play('rock')">
+      <img src="../images/rock.png" alt="Rock">
+    </button>
+    <button class="moves-button" onclick="play('paper')">
+      <img src="../images/paper.png" alt="Paper">
+    </button>
+    <button class="moves-button" onclick="play('scissors')">
+      <img src="../images/scissors.png" alt="Scissors">
+    </button>
+  </div>  
 
   <div class="scoreboard">
     <p class="js-moves text"></p>
