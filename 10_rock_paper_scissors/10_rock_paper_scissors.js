@@ -8,7 +8,7 @@ const score = JSON.parse(localStorage.getItem('score')) || {
   let computerMove = '';
   let result = '';
 
-  // updateScore();
+  updateScore();
 
   function play(move) {
     yourMove = move;
@@ -32,6 +32,11 @@ const score = JSON.parse(localStorage.getItem('score')) || {
     ) {
       result = 'won';
       score.wins++;
+      confetti({
+        particleCount: 150,
+        spread: 80,
+        origin: { y: 0.6 }
+      });
     } else {
       result = 'lose';
       score.loses++;

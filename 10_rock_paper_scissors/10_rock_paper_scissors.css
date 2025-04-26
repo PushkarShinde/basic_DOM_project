@@ -1,3 +1,9 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
 body{
   text-align: center;
   background-color: #722F37;
@@ -7,10 +13,11 @@ body{
   font-size:30px;
   font-weight: bold;
   color: beige;
+  padding: 10px;
 }
 .moves-button{
   background-color: #722F37;
-  margin:10px 10px;
+  margin:20px 10px;
   border: 2px solid beige;
   padding: 10px;
   border-radius: 40px;
@@ -44,4 +51,26 @@ body{
 img{
   height: 50px;
   width: 50px;
+}
+
+.scoreboard {
+  margin: 30px auto;
+  padding: 20px;
+  max-width: 500px;
+  background: rgba(245, 245, 220, 0.1);
+  border: 2px solid beige;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+
+.scoreboard .text {
+  color: beige;
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.scoreboard .reset-score-button {
+  margin-top: 15px;
+  width: 80%;
 }
